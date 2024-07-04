@@ -35,17 +35,22 @@ header>i{
     top: 50%;
     right: 0;
     transform: translate(0, -25%);
+    transition: transform 0.25s linear;
+}
+
+i:hover{
+    cursor:pointer;
 }
 
 i.open{
-    transform: rotate(90deg) translate(-25%, -10%);
-    display: none;
+    transform: rotate(-90deg) translate(25%, 0%);
 }
 
 .logo{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    user-select: none;
 }
 
 .logo>img{
@@ -67,13 +72,21 @@ li{
     padding-top: 5px;
 }
 
-nav{
+li:hover{
+    cursor:pointer;
+}
+
+.nav{
     text-align: right;
     width: 100px;
     position: absolute;
     top: 100%;
     right: 0;
-    /* display: none; */
+    display: none;
+}
+
+.nav.open{
+    display:block;
 }
 
 
