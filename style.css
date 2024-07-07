@@ -74,6 +74,7 @@ li{
 
 li:hover{
     cursor:pointer;
+    scale: 1.1;
 }
 
 .nav{
@@ -82,11 +83,17 @@ li:hover{
     position: absolute;
     top: 100%;
     right: 0;
-    display: none;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transform: translateY(-40px);
+    transition: all 0.25s ease-in-out;
 }
 
 .nav.open{
-    display:block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 

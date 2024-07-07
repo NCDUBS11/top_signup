@@ -2,8 +2,6 @@ const menuIcon = document.querySelector(".fa-bars");
 
 const nav = document.querySelector(".nav");
 
-const menuItems = document.querySelector(".menuItems");
-
 
 function menuAction(){
     
