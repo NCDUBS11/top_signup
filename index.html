@@ -26,20 +26,22 @@
         </nav>
     </header>
     <main>
-        <div class="loginArea">
+        <form class="loginArea">
             <fieldset>
                 <legend>Login</legend>
                 <div class="extraInfo name" style="display:none">
                     <label for="name1">First Name:</label>
-                    <input type="text" id="name1" name="name1">
+                    <input type="text" id="name1" name="name1" 
+                    pattern="[A-Za-z]+" title="Names may only contain letters" required>
                     <label for="name2">Last Name:</label>
-                    <input type="text" id="name2" name="name2">
+                    <input type="text" id="name2" name="name2"
+                    pattern="[A-Za-z]+" title="Names may only contain letters" required>
                 </div>
                 <div class="baseInfo">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                     <label for="password">Password:</label>
-                    <input type="password" id="password1" name="password1">
+                    <input type="password" id="password1" name="password1" required>
                 </div>
                 <div class="extraInfo password" style="display:none">
                     <label for="password2">Confirm Password:</label>
@@ -55,7 +57,7 @@
                 <button type="button" class="signUp" onclick="newUser()">Sign-Up</button>
                 <button type="button" class="signIn" onclick="existUser()" style="display:none">Sign-In</button>
             </div>    
-        </div>
+        </form>
     </main>
     <footer>
         <!-- 

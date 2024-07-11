@@ -10,6 +10,9 @@ const upBtn = document.querySelector(".signUp");
 
 const inBtn = document.querySelector(".signIn");
 
+const password1 = document.getElementById("password1");
+
+const password2 = document.getElementById("password2");
 
 const extraInfo = document.querySelectorAll(".extraInfo");
 
