@@ -4,6 +4,8 @@ const nav = document.querySelector(".nav");
 
 const txtChange = document.querySelector(".newUser>p");
 
+const legend = document.querySelector("legend");
+
 const upBtn = document.querySelector(".signUp");
 
 const inBtn = document.querySelector(".signIn");
@@ -32,17 +34,21 @@ function newUser(){
         
         txtChange.innerText="Existing user?"
 
+        legend.innerText="Sign-Up"
+        
         upBtn.style.display="none";
         inBtn.style.display="inline-block";
-}
-
-function existUser(){
-    extraInfo.forEach((item)=>{
-        item.style.display="none";
-    })   
+    }
     
-    txtChange.innerText="New user?"
+function existUser(){
+        extraInfo.forEach((item)=>{
+            item.style.display="none";
+        })   
+        
+        txtChange.innerText="New user?"
 
-    upBtn.style.display="inline-block";
-    inBtn.style.display="none";
+        legend.innerText="Login"
+        
+        upBtn.style.display="inline-block";
+        inBtn.style.display="none";
 }

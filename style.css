@@ -119,12 +119,15 @@ legend{
 input{
     display: block;
     color: white;
-    margin: 5px 0 10px 0;
+    margin: 5px 0 15px 0;
+    padding-left:1ch;
     background: transparent;
     border-radius: 10px;
     width: 30ch;
     border:2px solid rgba(255, 255, 255, 0.479);
 }
+
+
 
 button{
     margin: 0;
@@ -135,7 +138,9 @@ button{
     backdrop-filter: blur(1px);
     border-radius: 10px;
     border:2px solid rgba(255, 255, 255, 0.479);
-    transition: all 0.1s ease-in-out;
+    transition: 
+    scale 0.1s ease-in-out,
+    border 0.1s ease-in-out;
 }
 
 button:hover{
