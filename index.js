@@ -45,6 +45,11 @@ function newUser(){
         
         upBtn.style.display="none";
         inBtn.style.display="inline-block";
+
+        name1.required=true;
+        name2.required=true;
+        password2.required=true;
+
     }
     
 function existUser(){
@@ -58,4 +63,8 @@ function existUser(){
         
         upBtn.style.display="inline-block";
         inBtn.style.display="none";
+
+        name1.required=false;
+        name2.required=false;
+        password2.required=false;
 }
