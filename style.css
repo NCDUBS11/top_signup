@@ -96,4 +96,88 @@ li:hover{
     pointer-events: auto;
 }
 
+.loginArea{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 1s ease-in-out;
+    padding: 5px 15px 50px 15px;
+}
+
+legend{
+    font-family: "Lora", Helvetica, sans-serif;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+input{
+    display: block;
+    color: white;
+    margin: 5px 0 10px 0;
+    background: transparent;
+    border-radius: 10px;
+    width: 30ch;
+    border:2px solid rgba(255, 255, 255, 0.479);
+}
+
+button{
+    margin: 0;
+    margin-top: 15px;
+    padding: 2px 10px;
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    border:2px solid rgba(255, 255, 255, 0.479);
+    transition: all 0.1s ease-in-out;
+}
+
+button:hover{
+    scale: 1.1;
+    border:3px solid rgba(255, 255, 255, 0.781);
+    cursor: pointer;
+}
+
+button:active{
+    font-weight: 600;
+}
+
+.submit{
+    position: absolute;
+    bottom:15px;
+    left: 15px;
+}
+
+.newUser{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.newUser>p{
+    display: inline-block;
+    font-size: 0.85rem;
+
+}
+
+.newUser>button{
+    border: none;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    font-size: 0.85rem;
+}
+
+.newUser>button:hover{
+    cursor: pointer;
+    scale:1.1;
+}
+
+
 

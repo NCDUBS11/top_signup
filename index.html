@@ -26,7 +26,36 @@
         </nav>
     </header>
     <main>
-
+        <div class="loginArea">
+            <fieldset>
+                <legend>Login</legend>
+                <div class="extraInfo name" style="display:none">
+                    <label for="name1">First Name:</label>
+                    <input type="text" id="name1" name="name1">
+                    <label for="name2">Last Name:</label>
+                    <input type="text" id="name2" name="name2">
+                </div>
+                <div class="baseInfo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password1" name="password1">
+                </div>
+                <div class="extraInfo password" style="display:none">
+                    <label for="password2">Confirm Password:</label>
+                    <input type="password" id="password2" name="password2">
+                </div>
+            </fieldset>
+            <div class="btns">
+            <button class="submit" type="submit">Submit</button>
+            </div>
+            
+            <div class="newUser">  
+                <p>New user?</p>  
+                <button type="button" class="signUp" onclick="newUser()">Sign-Up</button>
+                <button type="button" class="signIn" onclick="existUser()" style="display:none">Sign-In</button>
+            </div>    
+        </div>
     </main>
     <footer>
         <!-- 
