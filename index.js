@@ -14,11 +14,36 @@ const name1 = document.getElementById("name1");
 
 const name2 = document.getElementById("name2");
 
+const email = document.getElementById("email");
+
 const password1 = document.getElementById("password1");
 
 const password2 = document.getElementById("password2");
 
 const extraInfo = document.querySelectorAll(".extraInfo");
+
+const form = document.querySelector(".loginArea");
+
+form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+
+    email.reportValidity();
+
+    password1.reportValidity();
+
+    if (legend.innerText==="Sign-Up"){
+        name1.reportValidity();
+        name2.reportValidity();
+        password2.reportValidity();
+        if (password1.value!==password2.value){
+            password2.setCustomValidity("Passwords do not match.");
+        }
+        else{
+            password2.setCustomValidity("");
+        }
+    }
+    form.submit();
+})
 
 function menuAction(){
     

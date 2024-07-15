@@ -127,6 +127,10 @@ input{
     border:2px solid rgba(255, 255, 255, 0.479);
 }
 
+input.fail{
+    border:3px solid rgba(252, 32, 32, 0.479);
+}
+
 
 
 button{
