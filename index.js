@@ -31,15 +31,15 @@ form.addEventListener('submit', (e)=> {
 
     password1.reportValidity();
 
-    if (legend.innerText==="Sign-Up"){
+    if (legend.value=="Sign-Up"){
         name1.reportValidity();
         name2.reportValidity();
-        password2.reportValidity();
-        if (password1.value!==password2.value){
-            password2.setCustomValidity("Passwords do not match.");
+        if (password1.value===password2.value){
+            password2.reportValidity();
         }
         else{
-            password2.setCustomValidity("");
+            password2.setCustomValidity("Passwords do not match.");
+            password2.reportValidity();
         }
     }
     form.submit();
