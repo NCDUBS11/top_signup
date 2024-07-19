@@ -10,40 +10,25 @@ const upBtn = document.querySelector(".signUp");
 
 const inBtn = document.querySelector(".signIn");
 
-const name1 = document.getElementById("name1");
-
-const name2 = document.getElementById("name2");
-
-const email = document.getElementById("email");
-
-const password1 = document.getElementById("password1");
-
-const password2 = document.getElementById("password2");
-
 const extraInfo = document.querySelectorAll(".extraInfo");
 
-const form = document.querySelector(".loginArea");
+const pass1 = document.getElementById("password1");
 
-form.addEventListener('submit', (e)=> {
-    e.preventDefault();
+const pass2 = document.getElementById("password2");
 
-    email.reportValidity();
 
-    password1.reportValidity();
-
-    if (legend.innerText==="Sign-Up"){
-        name1.reportValidity();
-        name2.reportValidity();
-        password2.reportValidity();
-        if (password1.value!==password2.value){
-            password2.setCustomValidity("Passwords do not match.");
-        }
-        else{
-            password2.setCustomValidity("");
-        }
+function passCheck(){
+    if (pass1.value!==pass2.value){
+        pass2.setCustomValidity("Passwords do not match");
+        return false;
     }
-    form.submit();
-})
+    else{
+        pass2.setCustomValidity("");
+
+        return true;
+    }
+    
+}
 
 function menuAction(){
     

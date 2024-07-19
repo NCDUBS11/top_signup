@@ -96,7 +96,7 @@ li:hover{
     pointer-events: auto;
 }
 
-.loginArea{
+#form{
     position:absolute;
     top: 50%;
     left: 50%;
@@ -127,11 +127,19 @@ input{
     border:2px solid rgba(255, 255, 255, 0.479);
 }
 
-input.fail{
-    border:3px solid rgba(252, 32, 32, 0.479);
+input:focus-visible{
+    outline-color:rgb(173, 129, 6);
 }
 
+input:invalid{
+    border-left-color: rgb(255, 43, 43);
+    border-right-color: rgb(255, 43, 43);
+}
 
+input:valid{
+    border-left-color: rgb(0, 199, 83);
+    border-right-color: rgb(0, 199, 83);
+}
 
 button{
     margin: 0;
