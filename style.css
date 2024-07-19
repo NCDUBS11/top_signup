@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
 
 
-
-:root{
+*{
     line-height: 1.5;
     font-size: 16px;
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: "Roboto", Helvetica, sans-serif;
+    font-family: "Nanum Gothic", Helvetica, sans-serif;
 }
 
 body{
@@ -32,11 +31,13 @@ body{
     position: relative;
     background-image: url(./sakura.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 30px;
 }
 
-.textArea{
+header{
     display: flex;
-    justify-content: center;
     align-items: center;
     position:absolute;
     top: 30%;
@@ -86,8 +87,7 @@ legend{
     padding-bottom: 1.5rem;
 }
 
-fieldset{
-    border: none;
+h1{
     margin: 0;
     padding: 0 0 0 2rem;
     font-size: 1rem;
